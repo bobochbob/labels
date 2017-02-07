@@ -30,8 +30,8 @@ class ViewController: UIViewController {
         
         tapCount = tapCount + 1
         
-        if tapCount >= 10 {
-            nameLabel.text = "You tapped the button 10 times (or more)"
+        if tapCount >= 20 {
+            nameLabel.text = "You tapped the button 20 times (or more)"
         }
         
         print(tapCount)
