@@ -34,17 +34,41 @@
                                     <action selector="clickMeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h77-DW-qbb"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zpp-Aa-sI1">
+                                <rect key="frame" x="137.5" y="198" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="LYR-Oy-FIj"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHI-q8-eLC">
+                                <rect key="frame" x="137.5" y="253" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="y7n-LL-SdG"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SE3-hS-wLt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Jf-Q7-Dx7"/>
+                            <constraint firstItem="QHI-q8-eLC" firstAttribute="top" secondItem="Zpp-Aa-sI1" secondAttribute="bottom" constant="25" id="E4c-zD-My1"/>
+                            <constraint firstItem="QHI-q8-eLC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UTk-ez-o3x"/>
                             <constraint firstItem="SE3-hS-wLt" firstAttribute="top" secondItem="7Od-SV-UIH" secondAttribute="bottom" constant="22" id="d1h-pO-zmh"/>
                             <constraint firstItem="7Od-SV-UIH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="fYA-Lq-Pt2"/>
                             <constraint firstItem="7Od-SV-UIH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m55-5r-I3u"/>
+                            <constraint firstItem="Zpp-Aa-sI1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oaL-v9-WM8"/>
+                            <constraint firstItem="Zpp-Aa-sI1" firstAttribute="top" secondItem="SE3-hS-wLt" secondAttribute="bottom" constant="25" id="ukc-5j-5CU"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="nameLabel" destination="7Od-SV-UIH" id="3CK-ll-m4S"/>
+                        <outlet property="textFieldOne" destination="Zpp-Aa-sI1" id="wcP-yW-x3k"/>
+                        <outlet property="textFieldTwo" destination="QHI-q8-eLC" id="E1S-bt-YPe"/>
                         <outlet property="theButton" destination="SE3-hS-wLt" id="Ayd-tC-epF"/>
                     </connections>
                 </viewController>

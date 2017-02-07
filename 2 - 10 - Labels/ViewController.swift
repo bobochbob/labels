@@ -12,8 +12,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var theButton: UIButton!
+    @IBOutlet weak var textFieldOne: UITextField!
+    @IBOutlet weak var textFieldTwo: UITextField!
     
-    var tapCount = 0
+    //var tapCount = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +30,20 @@ class ViewController: UIViewController {
 
     @IBAction func clickMeButtonPressed(_ sender: Any) {
         
-        tapCount = tapCount + 1
+        /*tapCount = tapCount + 1
         
         if tapCount >= 20 {
             nameLabel.text = "You tapped the button 20 times (or more)"
         }
         
-        print(tapCount)
+        print(tapCount)*/
+    
+        nameLabel.text = "Är lika med: \(Double(textFieldOne.text!)! + Double(textFieldTwo.text!)!)"
+        
+        print(textFieldOne.text!)
+        print(textFieldTwo.text!)
+        
+        
     }
 
 }
